@@ -1,0 +1,182 @@
+<div [@routerTransition]>
+  <div class="row">
+    <div class="col col-xl-12 col-lg-12">
+      <div class="card mb-3">
+        <div class="card-header">
+          <div style="display: flex; justify-content: space-between;">
+            <h4>AVALIAÇÃO ADMINISTRATIVA</h4>
+          </div>
+        </div>
+        <div class="card-body table-responsive">
+          <form [formGroup]="form" (ngSubmit)="doSubmit()">
+            <div class="form-group">
+              <div class="card">
+                <div class="card-body">
+                  <label for="ava_current_mayor"><strong>Como você avalia a gestão do(a) atual prefeito(a) {{mayor}}:
+                    </strong></label><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="otimoPref" type="radio" value="Otimo" name="ava_current_mayor"
+                    formControlName="ava_current_mayor">
+                  <label for="otimoPref"> &nbsp;Ótimo</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="bomPref" type="radio" value="Bom" name="ava_current_mayor"
+                    formControlName="ava_current_mayor">
+                  <label for="bomPref"> &nbsp;Bom</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="regularPref" type="radio" value="Regular" name="ava_current_mayor"
+                    formControlName="ava_current_mayor">
+                  <label for="regularPref"> &nbsp;Regular</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="ruimPref" type="radio" value="Ruim" name="ava_current_mayor"
+                    formControlName="ava_current_mayor">
+                  <label for="ruimPref"> &nbsp;Ruim</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="pessimoPref" type="radio" value="Pessimo" name="ava_current_mayor"
+                    formControlName="ava_current_mayor">
+                  <label for="pessimoPref"> &nbsp;Péssimo</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="NopPref" type="radio" value="Não Opinou" name="ava_current_mayor"
+                    formControlName="ava_current_mayor">
+                  <label for="NopPref"> &nbsp;Não Opinou</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="card">
+                <div class="card-body">
+                  <label for="ava_legislative_power"><strong>Como você avalia o desempenho dos integrantes da Câmara Municipal?
+                    </strong></label><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="otimoCam" type="radio" value="Otimo" name="ava_legislative_power"
+                    formControlName="ava_legislative_power">
+                  <label for="otimoCam"> &nbsp;Ótimo</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="bomCam" type="radio" value="Bom" name="ava_legislative_power"
+                    formControlName="ava_legislative_power">
+                  <label for="bomCam"> &nbsp;Bom</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="regularCam" type="radio" value="Regular" name="ava_legislative_power"
+                    formControlName="ava_legislative_power">
+                  <label for="regularCam"> &nbsp;Regular</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="ruimCam" type="radio" value="Ruim" name="ava_legislative_power"
+                    formControlName="ava_legislative_power">
+                  <label for="ruimCam"> &nbsp;Ruim</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="pessimoCam" type="radio" value="Pessimo" name="ava_legislative_power"
+                    formControlName="ava_legislative_power">
+                  <label for="pessimoCam"> &nbsp;Péssimo</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="NopCam" type="radio" value="Não Opinou" name="ava_legislative_power"
+                    formControlName="ava_legislative_power">
+                  <label for="NopCam"> &nbsp;Não Opinou</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="card">
+                <div class="card-body">
+                  <label for="ava_current_mayor"><strong>Como você avalia o Governo de {{governor}}: </strong></label><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="otimoGov" type="radio" value="Otimo" name="ava_current_governor"
+                    formControlName="ava_current_governor">
+                  <label for="otimoGov"> &nbsp;Ótimo</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="bomGov" type="radio" value="Bom" name="ava_current_governor"
+                    formControlName="ava_current_governor">
+                  <label for="bomGov"> &nbsp;Bom</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="regularGov" type="radio" value="Regular" name="ava_current_governor"
+                    formControlName="ava_current_governor">
+                  <label for="regularGov"> &nbsp;Regular</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="ruimGov" type="radio" value="Ruim" name="ava_current_governor"
+                    formControlName="ava_current_governor">
+                  <label for="ruimGov"> &nbsp;Ruim</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="pessimoGov" type="radio" value="Pessimo" name="ava_current_governor"
+                    formControlName="ava_current_governor">
+                  <label for="pessimoGov"> &nbsp;Péssimo</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="NopGov" type="radio" value="Não Opinou" name="ava_current_governor"
+                    formControlName="ava_current_governor">
+                  <label for="NopGov"> &nbsp;Não Opinou</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="card">
+                <div class="card-body">
+                  <label for="ava_current_president"><strong>Como você avalia o governo do Presidente {{president}}:
+                    </strong></label><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="otimoPres" type="radio" value="Otimo" name="ava_current_president"
+                    formControlName="ava_current_president">
+                  <label for="otimoPres"> &nbsp;Ótimo</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="bomPres" type="radio" value="Bom" name="ava_current_president"
+                    formControlName="ava_current_president">
+                  <label for="bomPres"> &nbsp;Bom</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="regularPres" type="radio" value="Regular" name="ava_current_president"
+                    formControlName="ava_current_president">
+                  <label for="regularPres"> &nbsp;Regular</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="ruimPres" type="radio" value="Ruim" name="ava_current_president"
+                    formControlName="ava_current_president">
+                  <label for="ruimPres"> &nbsp;Ruim</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="pessimoPres" type="radio" value="Pessimo" name="ava_current_president"
+                    formControlName="ava_current_president">
+                  <label for="pessimoPres"> &nbsp;Péssimo</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="NopPres" type="radio" value="Não opinou" name="ava_current_president"
+                    formControlName="ava_current_president">
+                  <label for="NopPres"> &nbsp;Não Opinou</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="card">
+                <div class="card-body">
+                  <label for="ava_coronavirus"><strong>A atual Administração municipal está promovendo ações para evitar a disseminação do Coronavírus no município?
+                    </strong></label><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="simCor" type="radio" value="Sim" name="ava_coronavirus"
+                    formControlName="ava_coronavirus">
+                  <label for="simCor"> &nbsp;Sim</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="naoCor" type="radio" value="Não" name="ava_coronavirus"
+                    formControlName="ava_coronavirus">
+                  <label for="naoCor"> &nbsp;Não</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="nopCor" type="radio" value="Não Opinou" name="ava_coronavirus"
+                    formControlName="ava_coronavirus">
+                  <label for="nopCor"> &nbsp;Não Opinou</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-group">
+                <select class="form-control" formControlName="active_secretary">
+                  <option value="" selected="true" disabled="true">Qual secretaria mais atuante? </option>
+                  <option *ngFor="let item of secretaries | keyvalue; let i=index" value="{{item.value.name}}">
+                    {{item.value.name}}</option>
+                    <option value="Nenhuma Atuante">Nenhuma atuante</option>
+                    <option value="Todas Atuantes">Todas atuantes</option>
+                    <option value="Não Opinou">Não Opinou</option>
+                </select>
+              </div>
+            </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Qual vereador mais atuante?"
+                  formControlName="active_councilor">
+              </div>
+              <button type="reset" class="btn btn-warning" style="margin-right: 10px;">Limpar</button>
+              <button type="submit" class="btn btn-success" [disabled]="!form.valid">Próximo</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

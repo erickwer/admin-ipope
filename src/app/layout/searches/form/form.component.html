@@ -1,0 +1,30 @@
+<div [@routerTransition]>
+  <app-page-header [heading]="'Tables'" [icon]="'fa-table'"></app-page-header>
+  <div class="row">
+    <div class="col col-xl-12 col-lg-12">
+      <div class="card mb-3">
+        <div class="card-header">
+          <div style="display: flex; justify-content: space-between;">
+            <h4>Formulários</h4>
+            <a class="btn btn-sm btn-info" (click)="createForm();">
+              <i class="fa fa-2x fa-plus"></i>
+            </a>
+          </div>
+        </div>
+        <div class="card-body table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <td>Total de formulários cadastrados: {{totalForm}}</td>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

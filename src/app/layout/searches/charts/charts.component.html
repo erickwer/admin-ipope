@@ -1,0 +1,211 @@
+<div class="container">
+  <div class="row justify-content-xl-center">
+    <div class="card text-center">
+      <div class="card-header"> Perfil do eleitor por sexo em {{city}}</div>
+      <div class="card-body">
+        <div class="chartGender">
+          <canvas height="300" width="400" id="myChartGender"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="card text-center border">
+      <div class="card-header"> Perfil do eleitor por faixa etária de idade em {{city}}</div>
+      <div class="card-body">
+        <div class="chartAge">
+          <canvas height="300" width="500" id="myChartAge"  ></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="page-break-after: always"></div>
+  <div class="row justify-content-xl-center">
+    <div class="card text-center border">
+      <div class="card-header"> Perfil do eleitor por ocupação profissional em {{city}}</div>
+      <div class="card-body">
+        <div class="chartOccupation">
+          <canvas height="300" width="500"id="myChartOccupation"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="card text-center border">
+      <div class="card-header"> Perfil do eleitor por nível de escolaridade em {{city}}</div>
+      <div class="card-body">
+        <div class="chartScholarity">
+          <canvas height="300" width="500" id="myChartScholarity"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="page-break-after: always"></div>
+  <div class="row justify-content-xl-center">
+    <div class="card text-center border">
+      <div class="card-header"> Perfil do eleitor por renda familiar em {{city}}</div>
+      <div class="card-body">
+        <div class="chartIncome">
+          <canvas height="300" width="550" id="myChartIncome"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="card text-center border">
+      <div class="card-header"> Perfil do eleitor por situação de moradia em {{city}}</div>
+      <div class="card-body">
+        <div class="chartHousing">
+          <canvas height="300" width="450" id="myChartHousing"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="page-break-after: always"></div>
+  <div class="row justify-content-xl-center">
+    <div class="card text-center border">
+      <div class="card-header"> Perfil do eleitor por Religião em {{city}}</div>
+      <div class="card-body">
+        <div class="chartReligion">
+          <canvas height="300" width="600" id="myChartReligion"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="page-break-after: always"></div>
+  <div class="row justify-content-xl-center">
+    <div class="card text-center border">
+      <div class="card-header"> Avaliação Administrativa da Câmara Municipal em {{city}}</div>
+      <div class="card-body">
+        <div class="chartAvaCam">
+          <canvas  id="myChartCam"></canvas>
+        </div>
+      </div>
+    </div>    
+    <div class="card text-center border">
+      <div class="card-header"> A prefeitura está tomando ações contra o Coronavirus em {{city}}?</div>
+      <div class="card-body">
+        <div class="chartAvaCor">
+        <canvas  id="myChartCor"  ></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="page-break-after: always"></div>
+  <div class="row justify-content-xl-center">
+    <div class="card text-center border">
+      <div class="card-header"> Avaliação Administrativa da Prefeitura em {{city}}</div>
+      <div class="card-body">
+        <div class="chartAvaPref">
+          <canvas height="300" width="400" id="myChartAvaPref"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="card text-center border">
+      <div class="card-header"> Avaliação Administrativa das secretarias em {{city}}</div>
+      <div class="card-body">
+        <canvas id="stakeholderChart"  height="400" width="400"></canvas>
+      </div>
+    </div>
+  </div>
+  <div style="page-break-after: always"></div>
+  <div class="row justify-content-xl-center">
+    <div class="card text-center border">
+      <div class="card-header"> Avaliação do Governo do Estado </div>
+      <div class="card-body">
+        <div class="chartAvaGov">
+          <canvas height="300" width="500" id="myChartAvaGov"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="card text-center border">
+      <div class="card-header"> Avaliação da Presidência</div>
+      <div class="card-body">
+        <div class="chartAvaPres">
+          <canvas height="300" width="500" id="myChartAvaPres"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="page-break-after: always"></div>
+  <div class="row justify-content-xl-center">
+    <div class="card text-center border">
+      <div class="card-header"> Votos Espontâneos para prefeito </div>
+      <div class="card-body">
+        <div class="charEspPref">
+          <canvas height="300" width="600" id="myChartEspPref"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="card text-center border">
+      <div class="card-header">Rejeição candidatos a prefeito</div>
+      <div class="card-body">
+        <div class="chartRejEspPref">
+          <canvas height="300" width="600" id="myChartRejEspPref"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="page-break-after: always"></div>
+  <div class="row justify-content-xl-center">
+  <div class="card text-center border">
+    <div class="card-header"> Vereadores</div>
+    <div class="card-body">
+      <div class="chartCouncilors">
+        <canvas height="500" width="500" id="myChartCouncilors"></canvas>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div style="page-break-after: always"></div>
+  <div class="row justify-content-xl-center">
+    <div class="card text-center border">
+      <div class="card-header"> Aceita indicação do prefeito </div>
+      <div class="card-body">
+        <div class="charEspIndPref">
+          <canvas height="300" width="500" id="myChartEspIndPref"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="card text-center border">
+      <div class="card-header">Votos Estimulados para prefeito </div>
+      <div class="card-body">
+        <div class="chartEstimPref">
+          <canvas height="300" width="500" id="myChartEstimPref"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="page-break-after: always"></div>
+  <div class="row justify-content-xl-center">
+    <div class="card text-center border">
+      <div class="card-header">Rejeição estimulada para prefeito</div>
+      <div class="card-body">
+        <div class="charRejEstimPref">
+          <canvas height="300" width="500" id="myChartRejEstimPref"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="card text-center border">
+      <div class="card-header">Cenário de primeira disputa</div>
+      <div class="card-body">
+        <div class="chartFirstDisp">
+          <canvas height="300" width="500" id="myChartFirstDisp"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="page-break-after: always"></div>
+  <div class="row justify-content-xl-center">
+    <div class="card text-center border">
+      <div class="card-header">Cenário de segunda Disputa</div>
+      <div class="card-body">
+        <div class="chartSecDisp">
+          <canvas height="300" width="500" id="myChartSecondDisp"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="card text-center border">
+      <div class="card-header">Demandas Sociais</div>
+      <div class="card-body">
+        <div class="chartSocialDemands">
+          <canvas id="myChartSocialDemands" height="500" width="500" ></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

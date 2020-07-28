@@ -1,0 +1,46 @@
+<div [@routerTransition]>
+  <app-page-header [heading]="'Tables'" [icon]="'fa-table'"></app-page-header>
+  <div class="row">
+    <div class="col col-xl-12 col-lg-12">
+      <div class="card mb-3">
+        <div class="card-header">
+          <div style="display: flex; justify-content: space-between;">
+            <h4>Pesquisas</h4>
+            <a class="btn btn-sm btn-info" routerLink="/create">
+              <i class="fa fa-2x fa-plus"></i>
+            </a>
+          </div>
+        </div>
+        <div class="card-body table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Descrição</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of searches;">
+                <td>{{item.description}}</td>
+                <td>
+                  <a class="btn btn-sm btn-warning" routerLink="/searches/view/{{item.id}}">
+                    <i class="fa fa-2x fa-eye"></i>
+                  </a>
+                  <a class="btn btn-sm btn-success" routerLink="/searches/{{item.id}}/forms">
+                    <i class="fa fa-2x fa-book"></i>
+                  </a>
+                  <a class="btn btn-sm btn-danger" (click)="removeSearch(item.id);">
+                    <i class="fa fa-2x fa-trash"></i>
+                  </a>
+                  <a class="btn btn-sm btn-primary"  routerLink="/searches/{{item.id}}/charts">
+                    <i class="fa fa-2x fa-bar-chart"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

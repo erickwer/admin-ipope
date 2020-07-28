@@ -1,0 +1,115 @@
+<div [@routerTransition]>
+  <div class="row">
+    <div class="col col-xl-12 col-lg-12">
+      <div class="card mb-3">
+        <div class="card-header">
+          <div style="display: flex; justify-content: space-between;">
+            <h4>INTENÇÃO DE VOTOS ESPONTÂNEOS PARA PREFEITO</h4>
+          </div>
+        </div>
+        <div class="card-body table-responsive">
+          <form [formGroup]="form" (ngSubmit)="doSubmit()">
+            <div class="form-group">
+              <div class="card">
+                <div class="card-body">
+                  <label for="candidatoPref"><strong>Se a eleição fosse hoje, em quem você votaria para
+                      prefeito?</strong></label>
+                  <input type="text" class="form-control" placeholder="Nome do Candidato" name="name_mayor"
+                    formControlName="name_mayor">
+                  <input id="indecisoPref" type="radio" value="Indeciso" name="name_mayor"
+                    formControlName="name_mayor">
+                  <label for="indecisoPref"> &nbsp;Indeciso</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="brancoNuloPref" type="radio" value="Branco/Nulo" name="name_mayor"
+                    formControlName="name_mayor">
+                  <label for="brancoNuloPref"> &nbsp;Branco/Nulo</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="NopCandPref" type="radio" value="Não Opinou" name="name_mayor" formControlName="name_mayor">
+                  <label for="NopCandPref"> &nbsp;Não Opinou</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="card">
+                <div class="card-body">
+                  <label for="candidatoRejPref"><strong>Em quem você não votaria de jeito nenhum para
+                      prefeito?</strong></label>
+                  <input type="text" class="form-control" placeholder="Nome do Candidato" name="not_name_mayor" formControlName="not_name_mayor">
+                  <input id="naoRejPref" type="radio" value="Não Rejeita" name="not_name_mayor"
+                    formControlName="not_name_mayor">
+                  <label for="naoRejPref"> &nbsp;Não Rejeita</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="rejTodos" type="radio" value="Rejeita Todos Opinou" name="not_name_mayor" formControlName="not_name_mayor">
+                  <label for="rejTodos"> &nbsp;Rejeita Todos</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="nopRej" type="radio" value="Não Opinou" name="not_name_mayor" formControlName="not_name_mayor">
+                  <label for="nopRej"> &nbsp;Não Opinou</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="card">
+                <div class="card-body">
+                  <label for="councilor_candidate"><strong>Se a eleição fosse hoje, em quem você votaria para
+                      Vereador?</strong></label>
+                  <input type="text" class="form-control" placeholder="Nome do Candidato a Vereador"
+                    name="councilor_candidate" formControlName="councilor_candidate">
+                  <input id="brancoNuloVer" type="radio" value="Branco/Nulo" name="councilor_candidate"
+                    formControlName="councilor_candidate">
+                  <label for="brancoNuloVer"> &nbsp;Branco/Nulo</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="indecisoVer" type="radio" value="Indeciso" name="councilor_candidate"
+                    formControlName="councilor_candidate">
+                  <label for="indecisoVer"> &nbsp;Indeciso</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="NopCandVer" type="radio" value="Não Opinou" name="councilor_candidate"
+                    formControlName="councilor_candidate">
+                  <label for="NopCandVer"> &nbsp;Não Opinou</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="card">
+                <div class="card-body">
+                  <label for="vencedorPref"><strong>Na sua opnião qual será o próximo prefeito de
+                      {{city}}</strong></label>
+                  <input type="text" class="form-control" placeholder="Nome do candidato cotado à vitória"
+                    name="expectation_mayor_victory" formControlName="expectation_mayor_victory">
+                  <input id="naoSabe" type="radio" value="Não sabe" name="expectation_mayor_victory"
+                    formControlName="expectation_mayor_victory">
+                  <label for="naoSabe"> &nbsp;Não sabe</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="NopCandVit" type="radio" value="Não Opinou" name="expectation_mayor_victory"
+                    formControlName="expectation_mayor_victory">
+                  <label for="NopCandVit"> &nbsp;Não opinou</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="card">
+                <div class="card-body">
+                  <label for="gender"><strong>Você votaria no(a) candidato(a) recomendado pelo prefeito(a) {{mayor}}:
+                    </strong></label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="votaria" type="radio" value="Votaria" name="mayor_indication_accept"
+                    formControlName="mayor_indication_accept">
+                  <label for="votaria"> &nbsp;Votaria</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="naoVotaria" type="radio" value="Não votaria" name="mayor_indication_accept"
+                    formControlName="mayor_indication_accept">
+                  <label for="naoVotaria"> &nbsp;Não votaria</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="NopCandApo" type="radio" value="Não Opinou" name="mayor_indication_accept"
+                    formControlName="mayor_indication_accept">
+                  <label for="NopCandApo"> &nbsp;Não opinou</label>
+                </div>
+              </div>
+            </div>
+            <button type="reset" class="btn btn-warning" style="margin-right: 10px;">Limpar</button>
+            <button type="submit" class="btn btn-success" [disabled]="!form.valid">Próximo</button>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

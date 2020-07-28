@@ -1,0 +1,133 @@
+<div [@routerTransition]>
+  <app-page-header [heading]="''" [icon]="'fa-table'"></app-page-header>
+  <div class="row">
+    <div class="col col-xl-12 col-lg-12">
+      <div class="card-header">
+        <div style="display: flex; justify-content: space-between;">
+          <h4>{{description}}</h4>
+        </div>
+      </div>
+      <br>
+      <div class="card mb-3">
+        <div class="card-header">
+          <div style="display: flex; justify-content: space-between;">
+            <h4>Candidatos a Prefeito</h4>
+            <a class="btn btn-sm btn-info" routerLink="/{{search_id}}/mayor">
+              <i class="fa fa-2x fa-plus"></i>
+            </a>
+          </div>
+        </div>
+        <div class="card-body table-responsive">
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <th>Nome do candidato Prefeito</th>
+                <th  style="text-align: center;">Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of mayors;">
+                <td>{{item.name}}</td>
+                <td  style="text-align: center;">
+                  <a class="btn btn-sm btn-danger" (click)="removeMayor(item.id);">
+                    <i class="fa fa-lg fa-trash-o"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-header">
+          <div style="display: flex; justify-content: space-between;">
+            <h4>Cenário de Primeira Disputa</h4>
+            <a class="btn btn-sm btn-info" routerLink="/{{search_id}}/first">
+              <i class="fa fa-2x fa-plus"></i>
+            </a>
+          </div>
+        </div>
+        <div class="card-body table-responsive">
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <th>Nome do candidato a prefeito</th>
+                <th  style="text-align: center;">Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of first_cand;">
+                <td>{{item.name}}</td>
+                <td  style="text-align: center;">
+                  <a class="btn btn-sm btn-danger" (click)="removeFirst(item.id);">
+                    <i class="fa fa-lg fa-trash-o"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-header">
+          <div style="display: flex; justify-content: space-between;">
+            <h4>Cenário de Segunda Disputa</h4>
+            <a class="btn btn-sm btn-info" routerLink="/{{search_id}}/second">
+              <i class="fa fa-2x fa-plus"></i>
+            </a>
+          </div>
+        </div>
+        <div class="card-body table-responsive">
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <th>Nome do candidato a prefeito</th>
+                <th  style="text-align: center;">Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of second_cand;">
+                <td>{{item.name}}</td>
+                <td  style="text-align: center;">
+                  <a class="btn btn-sm btn-danger" (click)="removeSecond(item.id);">
+                    <i class="fa fa-lg fa-trash-o"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-header">
+          <div style="display: flex; justify-content: space-between;">
+            <h4>Secretarias da Atual Administração</h4>
+            <a class="btn btn-sm btn-info" routerLink="/{{search_id}}/secretary">
+              <i class="fa fa-2x fa-plus"></i>
+            </a>
+          </div>
+        </div>
+        <div class="card-body table-responsive">
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <th>Nome da secretaria</th>
+                <th style="text-align: center;">Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of secretaries;">
+                <td>{{item.name}}</td>
+                <td  style="text-align: center;" >
+                  <a class="btn btn-sm btn-danger" (click)="removeSecretary(item.id);">
+                    <i class="fa fa-lg fa-trash-o"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

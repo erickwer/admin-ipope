@@ -1,0 +1,63 @@
+<div [@routerTransition]>
+  <div class="row">
+    <div class="col col-xl-12 col-lg-12">
+      <div class="card mb-3">
+        <div class="card-header">
+          <div style="display: flex; justify-content: space-between;">
+            <h4>DEMANDAS SOCIAIS</h4>
+          </div>
+        </div>
+        <div class="card-body table-responsive">
+          <form [formGroup]="form" (ngSubmit)="doSubmit()">
+            <div class="form-group">
+              <div class="card">
+                <div class="card-body">
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="educacaoSim" type="checkbox" value="Sim" name="education" formControlName="education">
+                  <label for="educacaoSim"> &nbsp;&nbsp;<strong>Melhoria na Educação</strong></label><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="saudeSim" type="checkbox" value="Sim" name="health" formControlName="health">
+                  <label for="saudeSim"> &nbsp;&nbsp;<strong>Melhoria na Saúde</strong></label><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="moradiaSim" type="checkbox" value="Sim" name="dwelling" formControlName="dwelling">
+                  <label for="moradiaSim"> &nbsp;&nbsp;<strong>Moradia Popular</strong></label><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="empregoSim" type="checkbox" value="Sim" name="job" formControlName="job">
+                  <label for="empregoSim"> &nbsp;&nbsp;<strong>Geração de Emprego</strong></label><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="paviSim" type="checkbox" value="Sim" name="paving" formControlName="paving">
+                  <label for="paviSim"> &nbsp; &nbsp;<strong>Pavimentação Asfáltica</strong></label><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="limpezaSim" type="checkbox" value="Sim" name="cleaning" formControlName="cleaning">
+                  <label for="limpezaSim"> &nbsp; &nbsp;<strong>Limpeza Pública</strong></label><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="luzSim" type="checkbox" value="Sim" name="illumination" formControlName="illumination">
+                  <label for="luzSim"> &nbsp;&nbsp;<strong>Iluminação Pública</strong></label><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="estradaSim" type="checkbox" value="Sim" name="rural_roads" formControlName="rural_roads">
+                  <label for="estradaSim"> &nbsp;&nbsp;<strong>Estradas Rurais</strong></label><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="infraSim" type="checkbox" value="Sim" name="infrastructure" formControlName="infrastructure">
+                  <label for="infraSim"> &nbsp;&nbsp;<strong>Infraestrutura</strong></label><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="assistSim" type="checkbox" value="Sim" name="social_assistance" formControlName="social_assistance">
+                  <label for="assistSim"> &nbsp; &nbsp;<strong>Assistência Social</strong></label><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="sanBas" type="checkbox" value="Sim" name="sanitation" formControlName="sanitation">
+                  <label for="sanBas"> &nbsp;&nbsp;<strong>Saneamento Básico</strong></label><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="outrosSim" type="checkbox" value="Sim" name="others" formControlName="others">
+                  <label for="outrosSim"> &nbsp;&nbsp;<strong>Outras Demandas</strong></label><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input id="nop" type="checkbox" value="Não Opinou" name="nop" formControlName="nop">
+                  <label for="nop"> &nbsp;&nbsp;<strong>Não Opinou</strong></label>
+                </div>
+              </div>
+            </div>
+            <button type="reset" class="btn btn-warning" style="margin-right: 10px;">Limpar</button>
+            <button type="submit" class="btn btn-success" [disabled]="!form.valid">Próximo</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

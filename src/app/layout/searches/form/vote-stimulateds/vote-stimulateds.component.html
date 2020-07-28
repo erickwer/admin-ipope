@@ -1,0 +1,91 @@
+<div [@routerTransition]>
+  <div class="row">
+    <div class="col col-xl-12 col-lg-12">
+      <div class="card mb-3">
+        <div class="card-header">
+          <div style="display: flex; justify-content: space-between;">
+            <h4>INTENÇÃO DE VOTOS ESTIMULADA PARA PREFEITO</h4>
+          </div>
+        </div>
+        <div class="card-body table-responsive">
+          <form [formGroup]="form" (ngSubmit)="doSubmit()">
+            <div class="form-group">
+              <div class="card">
+                <div class="card-body">
+                  <label for="name_mayor"><strong>Se a eleição fosse hoje em qual candidato você votaria para prefeito?</strong></label>
+                  <select class="form-control" formControlName="name_mayor">
+                    <option value="" selected="true" disabled="true">Selecione...</option>
+                    <option *ngFor="let item of mayor_candidates | keyvalue; let i=index" value="{{item.value.name}}">
+                      {{item.value.name}}</option>
+                    <option value="Branco/Nulo">Branco/Nulo</option>
+                    <option value="Indeciso">Indeciso</option>
+                  </select>
+                </div> 
+              </div>   
+            </div>
+            <div class="form-group">
+              <div class="card">
+                <div class="card-body">
+                  <label for="not_name_mayor"><strong>Em qual destes candidatos você não votaria de jeito nenhum?</strong></label>
+                  <select class="form-control" formControlName="not_name_mayor">
+                    <option value="" selected="true" disabled="true">Selecione... </option>
+                    <option *ngFor="let item of mayor_candidates | keyvalue; let i=index" value="{{item.value.name}}">
+                      {{item.value.name}}</option>
+                    <option value="Não rejeita">Não rejeita</option>
+                    <option value="Rejeita todos">Rejeita todos</option>
+                    <option value="Não opinou">Não opinou</option>
+                  </select>
+                </div> 
+              </div>   
+            </div>
+            <div class="form-group">
+              <div class="card">
+                <div class="card-body">
+                  <label for="first_dispute"><strong>Se a disputa for entre os seguintes candidatos?(<span *ngFor="let item of first_disp | keyvalue; let i=index"> {{item.value.name}}, </span>)</strong></label>
+                  <select class="form-control" formControlName="first_dispute">
+                    <option value="" selected="true" disabled="true">Selecione...</option>
+                    <option *ngFor="let item of first_disp | keyvalue; let i=index" value="{{item.value.name}}">
+                      {{item.value.name}}</option>
+                    <option value="Branco/Nulo">Branco/Nulo</option>
+                    <option value="Indeciso">Indeciso/ Não respondeu</option>
+                    </select>
+                </div> 
+              </div>   
+            </div>
+            <div class="form-group">
+              <div class="card">
+                <div class="card-body">
+                  <label for="second_dispute"><strong>Se a disputa for entre os seguintes candidatos? (<span *ngFor="let item of second_disp | keyvalue; let i=index"> {{item.value.name}}, </span>)</strong></label>
+                  <select class="form-control" formControlName="second_dispute">
+                    <option value="" selected="true" disabled="true">Selecione...</option>
+                    <option *ngFor="let item of second_disp | keyvalue; let i=index" value="{{item.value.name}}">
+                      {{item.value.name}}</option>
+                    <option value="Branco/Nulo">Branco/Nulo</option>
+                    <option value="Indeciso">Indeciso/ Não respondeu</option>
+                  </select>
+                </div> 
+              </div>   
+            </div>
+            <div class="form-group">
+              <div class="card">
+                <div class="card-body">
+                  <label for="mayor_candidate_supports"><strong>Qual candidato o prefeito {{mayor}} deve apoiar na próxima eleição?</strong></label>
+                  <select class="form-control" formControlName="mayor_candidate_supports">
+                    <option value="" selected="true" disabled="true">Selecione...</option>
+                    <option *ngFor="let item of mayor_candidates | keyvalue; let i=index" value="{{item.value.name}}">
+                      {{item.value.name}}
+                    </option>
+                    <option value="Nenhum">Nenhum</option>
+                    <option value="Não sabe">Não sabe/ Não respondeu</option>
+                  </select>
+                </div> 
+              </div>   
+            </div>
+            <button type="reset" class="btn btn-warning" style="margin-right: 10px;">Limpar</button>
+            <button type="submit" class="btn btn-success" [disabled]="!form.valid">Próximo</button>
+          </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
