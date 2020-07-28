@@ -1,35 +1,5 @@
-# SB Admin rewritten in Angular8 and Bootstrap 4
-
-Simple Dashboard Admin App built using Angular 8 and Bootstrap 4
-
-This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v8.0](http://startbootstrap.com/template-overviews/sb-admin-2/) to Angular8 Theme.
-
-Powered by [StartAngular](http://startangular.com/) & [StrapUI](http://strapui.com/)
-
-## [Demo](http://rawgit.com/start-angular/SB-Admin-BS4-Angular-6/master/dist/)
-
-## [SB Admin Material version](https://github.com/start-javascript/sb-admin-material)
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
-
-### Introduction
-
-Provides fast, reliable and extensible starter for the development of Angular projects.
-
-`sb-admin-bs4-angular8` provides the following features:
-
-*   Developed using boostrap-v4.0.0
-*   angular-v8.0.0
-*   angular/cli-v8.0.0
-*   [ng-bootstrap-v4.0.0](https://github.com/ng-bootstrap/)
-*   [ngx-translate-v11.0.0](https://github.com/ngx-translate)
-*   Following the best practices.
-*   Ahead-of-Time compilation support.
-*   Official Angular i18n support.
-*   Production and development builds.
-*   Tree-Shaking production builds.
-
-### How to start
+# Dashboard para tabulação de pesquisa eleitoral de opinião pública
+Projeto desenvolvido com o intuito de automatizar processo de geração de gráficos resultantes de pesquisas eleitorais e de opinião pública. Através do preenchimento dos formulários específicos da pesquisa o sistema é alimentado e retorna os gráficos relacionados à avaliação admininistrativa, dados pesssoais, inteção de votos estiulada, intenção de votos esponânea entre outros de maneira automática. 
 
 **Note** that this seed project requires **node >=v8.9.0 and npm >=4**.
 
