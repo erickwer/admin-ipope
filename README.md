@@ -1,4 +1,4 @@
-# Dashboard para tabulação de pesquisa eleitoral de opinião pública
+# Dashboard para tabulação de pesquisa eleitoral e de opinião pública
 Projeto desenvolvido com o intuito de automatizar processo de geração de gráficos resultantes de pesquisas eleitorais e de opinião pública. Através do preenchimento dos formulários específicos da pesquisa o sistema é alimentado e retorna os gráficos relacionados à avaliação admininistrativa, dados pesssoais, inteção de votos estiulada, intenção de votos esponânea entre outros de maneira automática. 
 
 **Note** that this seed project requires **node >=v8.9.0 and npm >=4**.
