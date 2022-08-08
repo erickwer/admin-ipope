@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://api-ipope1-com.umbler.net/'
+  apiUrl: 'http://localhost:3000'
 };
 
 /*
