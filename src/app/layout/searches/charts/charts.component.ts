@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Chart } from 'node_modules/chart.js/dist/chart.js';
+import { Chart } from 'node_modules/chart.js/dist/Chart.js';
 import { FormService } from 'src/app/service/form.service';
 import { SearchService } from 'src/app/service/search.service';
 import { ActivatedRoute } from '@angular/router';
