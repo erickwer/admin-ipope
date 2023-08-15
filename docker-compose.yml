@@ -3,6 +3,8 @@ version: '3.5'
 services:
   angular-admin:
     container_name: admin-ipope_angular-admin
-    build: .
-    ports: 
-     - '4200:4200'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+     - 4200:4200

@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="row justify-content-xl-center">
+  <div class="row justify-content-center">
     <div class="card text-center">
       <div class="card-header"> Perfil do eleitor por sexo em {{city}}</div>
       <div class="card-body">
@@ -12,7 +12,7 @@
       <div class="card-header"> Perfil do eleitor por faixa etária de idade em {{city}}</div>
       <div class="card-body">
         <div class="chartAge">
-          <canvas height="300" width="500" id="myChartAge"  ></canvas>
+          <canvas height="300" width="600" id="myChartAge"  ></canvas>
         </div>
       </div>
     </div>
@@ -28,25 +28,6 @@
       </div>
     </div>
     <div class="card text-center border">
-      <div class="card-header"> Perfil do eleitor por nível de escolaridade em {{city}}</div>
-      <div class="card-body">
-        <div class="chartScholarity">
-          <canvas height="300" width="500" id="myChartScholarity"></canvas>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div style="page-break-after: always"></div>
-  <div class="row justify-content-xl-center">
-    <div class="card text-center border">
-      <div class="card-header"> Perfil do eleitor por renda familiar em {{city}}</div>
-      <div class="card-body">
-        <div class="chartIncome">
-          <canvas height="300" width="550" id="myChartIncome"></canvas>
-        </div>
-      </div>
-    </div>
-    <div class="card text-center border">
       <div class="card-header"> Perfil do eleitor por situação de moradia em {{city}}</div>
       <div class="card-body">
         <div class="chartHousing">
@@ -54,6 +35,9 @@
         </div>
       </div>
     </div>
+  </div>
+  <div style="page-break-after: always"></div>
+  <div class="row justify-content-xl-center">
   </div>
   <div style="page-break-after: always"></div>
   <div class="row justify-content-xl-center">
@@ -69,36 +53,11 @@
   <div style="page-break-after: always"></div>
   <div class="row justify-content-xl-center">
     <div class="card text-center border">
-      <div class="card-header"> Avaliação Administrativa da Câmara Municipal em {{city}}</div>
-      <div class="card-body">
-        <div class="chartAvaCam">
-          <canvas  id="myChartCam"></canvas>
-        </div>
-      </div>
-    </div>    
-    <div class="card text-center border">
-      <div class="card-header"> A prefeitura está tomando ações contra o Coronavirus em {{city}}?</div>
-      <div class="card-body">
-        <div class="chartAvaCor">
-        <canvas  id="myChartCor"  ></canvas>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div style="page-break-after: always"></div>
-  <div class="row justify-content-xl-center">
-    <div class="card text-center border">
       <div class="card-header"> Avaliação Administrativa da Prefeitura em {{city}}</div>
       <div class="card-body">
         <div class="chartAvaPref">
           <canvas height="300" width="400" id="myChartAvaPref"></canvas>
         </div>
-      </div>
-    </div>
-    <div class="card text-center border">
-      <div class="card-header"> Avaliação Administrativa das secretarias em {{city}}</div>
-      <div class="card-body">
-        <canvas id="stakeholderChart"  height="400" width="400"></canvas>
       </div>
     </div>
   </div>
@@ -124,18 +83,75 @@
   <div style="page-break-after: always"></div>
   <div class="row justify-content-xl-center">
     <div class="card text-center border">
-      <div class="card-header"> Votos Espontâneos para prefeito </div>
+      <div class="card-header"> Votos Espontâneos para governador </div>
       <div class="card-body">
-        <div class="charEspPref">
-          <canvas height="300" width="600" id="myChartEspPref"></canvas>
+        <div class="spontGovChart">
+          <canvas height="300" width="600" id="spontGovChart"></canvas>
         </div>
       </div>
     </div>
     <div class="card text-center border">
-      <div class="card-header">Rejeição candidatos a prefeito</div>
+      <div class="card-header">Rejeição candidatos a governador</div>
       <div class="card-body">
-        <div class="chartRejEspPref">
-          <canvas height="300" width="600" id="myChartRejEspPref"></canvas>
+        <div class="spontRejGovChart">
+          <canvas height="300" width="600" id="spontRejGovChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="page-break-after: always"></div>
+  <div class="row justify-content-xl-center">
+    <div class="card text-center border">
+      <div class="card-header">Intenção de votos estimulada para Governador</div>
+      <div class="card-body">
+        <div class="myChartEstimGov">
+          <canvas height="300" width="500" id="myChartEstimGov"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="card text-center border">
+      <div class="card-header">Rejeição estimulada para Governador</div>
+      <div class="card-body">
+        <div class="myChartRejEstimGov">
+          <canvas height="300" width="500" id="myChartRejEstimGov"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="page-break-after: always"></div>
+  <div class="row justify-content-xl-center">
+    <div class="card text-center border">
+      <div class="card-header">Intenção de votos estimulada para Presidente</div>
+      <div class="card-body">
+        <div class="myChartEstimPres">
+          <canvas height="300" width="500" id="myChartEstimPres"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="card text-center border">
+      <div class="card-header">Rejeição estimulada para Presidente</div>
+      <div class="card-body">
+        <div class="myChartRejEstimPres">
+          <canvas height="300" width="500" id="myChartRejEstimPres"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="page-break-after: always"></div>
+  <div class="row justify-content-xl-center">
+    <div class="card text-center border">
+      <div class="card-header">Intenção de votos estimulada para Senador</div>
+      <div class="card-body">
+        <div class="myChartEstimSenator">
+          <canvas height="300" width="500" id="myChartEstimSenator"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="card text-center border">
+      <div class="card-header">Rejeição estimulada para Senador</div>
+      <div class="card-body">
+        <div class="myChartRejEstimSenator">
+          <canvas height="300" width="500" id="myChartRejEstimSenator"></canvas>
         </div>
       </div>
     </div>
@@ -143,10 +159,10 @@
   <div style="page-break-after: always"></div>
   <div class="row justify-content-xl-center">
   <div class="card text-center border">
-    <div class="card-header"> Vereadores</div>
+    <div class="card-header"> Intenção de votos para deputado Federal </div>
     <div class="card-body">
-      <div class="chartCouncilors">
-        <canvas height="500" width="500" id="myChartCouncilors"></canvas>
+      <div class="myChartFederalDep">
+        <canvas height="500" width="500" id="myChartFederalDep"></canvas>
       </div>
     </div>
     </div>
@@ -154,18 +170,29 @@
   <div style="page-break-after: always"></div>
   <div class="row justify-content-xl-center">
     <div class="card text-center border">
-      <div class="card-header"> Aceita indicação do prefeito </div>
+      <div class="card-header"> Intenção de votos para deputado Estadual </div>
+      <div class="card-body">
+        <div class="myChartStateDep">
+          <canvas height="500" width="500" id="myChartStateDep"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="page-break-after: always"></div>
+  <div class="row justify-content-xl-center">
+    <div class="card text-center border">
+      <div class="card-header"> Aceita indicação do prefeito para Presidente </div>
       <div class="card-body">
         <div class="charEspIndPref">
-          <canvas height="300" width="500" id="myChartEspIndPref"></canvas>
+          <canvas height="300" width="500" id="myChartIndPresident"></canvas>
         </div>
       </div>
     </div>
     <div class="card text-center border">
-      <div class="card-header">Votos Estimulados para prefeito </div>
+      <div class="card-header"> Aceita indicação do prefeito para Governador </div>
       <div class="card-body">
-        <div class="chartEstimPref">
-          <canvas height="300" width="500" id="myChartEstimPref"></canvas>
+        <div class="charEspIndPref">
+          <canvas height="300" width="500" id="myChartIndGovernor"></canvas>
         </div>
       </div>
     </div>
@@ -173,18 +200,18 @@
   <div style="page-break-after: always"></div>
   <div class="row justify-content-xl-center">
     <div class="card text-center border">
-      <div class="card-header">Rejeição estimulada para prefeito</div>
+      <div class="card-header"> Aceita indicação do prefeito para Senador </div>
       <div class="card-body">
-        <div class="charRejEstimPref">
-          <canvas height="300" width="500" id="myChartRejEstimPref"></canvas>
+        <div class="myChartIndSenator">
+          <canvas height="300" width="500" id="myChartIndSenator"></canvas>
         </div>
       </div>
     </div>
     <div class="card text-center border">
-      <div class="card-header">Cenário de primeira disputa</div>
+      <div class="card-header"> Aceita indicação do prefeito para Deputado Federal </div>
       <div class="card-body">
-        <div class="chartFirstDisp">
-          <canvas height="300" width="500" id="myChartFirstDisp"></canvas>
+        <div class="myChartIndDepFed">
+          <canvas height="300" width="500" id="myChartIndDepFed"></canvas>
         </div>
       </div>
     </div>
@@ -192,20 +219,33 @@
   <div style="page-break-after: always"></div>
   <div class="row justify-content-xl-center">
     <div class="card text-center border">
-      <div class="card-header">Cenário de segunda Disputa</div>
+      <div class="card-header"> Aceita indicação do prefeito para Deputado Estadual </div>
       <div class="card-body">
-        <div class="chartSecDisp">
-          <canvas height="300" width="500" id="myChartSecondDisp"></canvas>
-        </div>
-      </div>
-    </div>
-    <div class="card text-center border">
-      <div class="card-header">Demandas Sociais</div>
-      <div class="card-body">
-        <div class="chartSocialDemands">
-          <canvas id="myChartSocialDemands" height="500" width="500" ></canvas>
+        <div class="myChartIndDepState">
+          <canvas height="300" width="500" id="myChartIndDepState"></canvas>
         </div>
       </div>
     </div>
   </div>
+  <div style="page-break-after: always"></div>
+  <div class="row justify-content-xl-center">
+    <div class="card text-center border">
+      <div class="card-header"> Votos Espontâneos para prefeito </div>
+      <div class="card-body">
+        <div class="charEspPref">
+          <canvas height="300" width="600" id="myChartEspPref"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="page-break-after: always"></div>
+  <div class="card text-center border">
+    <div class="card-header">Demandas Sociais</div>
+    <div class="card-body">
+      <div class="myChartSocialDemands">
+        <canvas id="myChartSocialDemands" height="500" width="500" ></canvas>
+      </div>
+    </div>
+  </div>
+  <div style="page-break-after: always"></div>
 </div>

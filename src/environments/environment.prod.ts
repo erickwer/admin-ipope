@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://api-ipope1-com.umbler.net/'
+  apiUrl: 'https://ipope4-ki4qmfbt3q-uc.a.run.app/admin/v1/ipope/'
 };

@@ -4,7 +4,7 @@
   "license": "Apache",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --host 0.0.0.0 --disable-host-check",
     "build": "ng build --prod",
     "gitbuild": "ng build --prod --base-href /start-angular/SB-Admin-BS4-Angular-7/master/dist/",
     "test": "ng test",
@@ -16,7 +16,7 @@
   "dependencies": {
     "@angular/animations": "10.0.5",
     "@angular/common": "10.0.5",
-    "@angular/compiler": "10.0.5",
+    "@angular/compiler": "10.1.1",
     "@angular/core": "10.0.5",
     "@angular/forms": "10.0.5",
     "@angular/localize": "^10.0.5",
@@ -26,7 +26,7 @@
     "@ng-bootstrap/ng-bootstrap": "4.2.1",
     "@ngx-translate/core": "11.0.1",
     "@ngx-translate/http-loader": "4.0.0",
-    "chart.js": "^2.7.3",
+    "chart.js": "2.7.3",
     "chartjs-plugin-datalabels": "^0.7.0",
     "chartjs-plugin-labels": "^1.1.0",
     "core-js": "2.5.7",

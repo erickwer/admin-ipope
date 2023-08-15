@@ -35,8 +35,8 @@ import '@angular/localize/init';
 
 /** IE10 and IE11 requires the following for the Reflect API. */
 
-import 'core-js/features/reflect';
-import 'core-js/features/reflect';
+import 'core-js/es6';
+import 'core-js/es6';
 
 /**
  * Web Animations `@angular/platform-browser/animations`

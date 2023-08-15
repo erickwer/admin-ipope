@@ -33,7 +33,7 @@ export class FormService {
   createForm(data, search_id:string): Promise<any>{
     return this.http.post(`${environment.apiUrl}searches/${search_id}/forms`, data).toPromise();
   }
-  
+
   getForms(search_id:string): Promise<any>{
     return this.http.get(`${environment.apiUrl}searches/${search_id}/forms`).toPromise();
   }

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:3000'
+  apiUrl: 'https://ipope-search-api.railway.internal/admin/v1/ipope/'
 };
 
 /*
