@@ -16,14 +16,16 @@
             <thead>
               <tr>
                 <th>Descrição</th>
+                <th>Código</th>
                 <th>Ações</th>
               </tr>
             </thead>
             <tbody>
               <tr *ngFor="let item of searches;">
                 <td>{{item.name}}</td>
+                <td>{{item.code}}</td>
                 <td>
-                  <a class="btn btn-sm btn-warning" routerLink="/searches/view/{{item.id}}">
+                  <!-- <a class="btn btn-sm btn-warning" routerLink="/searches/view/{{item.id}}">
                     <i class="fa fa-2x fa-eye"></i>
                   </a>
                   <a class="btn btn-sm btn-success" routerLink="/searches/{{item.id}}/forms">
@@ -31,7 +33,7 @@
                   </a>
                   <a class="btn btn-sm btn-danger" (click)="removeSearch(item.id);">
                     <i class="fa fa-2x fa-trash"></i>
-                  </a>
+                  </a> -->
                   <a class="btn btn-sm btn-primary"  routerLink="/searches/{{item.id}}/charts">
                     <i class="fa fa-2x fa-bar-chart"></i>
                   </a>

@@ -32,13 +32,9 @@ export class LoginComponent implements OnInit {
       const data = this.form.value;
       this.authService.signin(data).then(result => {
         if (!result.error) {
-          if (result.data) {
-            console.log("sem erros")
-            console.log(result)
             localStorage.setItem('isLoggedin', 'true');
             localStorage.setItem('user', JSON.stringify(result.data));
             this.router.navigateByUrl('/');
-          }
         } else {
           Swal.fire({
             icon: 'error',

@@ -35,7 +35,7 @@ export class FormService {
   }
 
   getForms(search_id:string): Promise<any>{
-    return this.http.get(`${environment.apiUrl}searches/12/forms`).toPromise();
+    return this.http.get(`${environment.apiUrl}searches/${search_id}/forms`).toPromise();
   }
 
 }

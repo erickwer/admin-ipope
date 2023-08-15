@@ -17,12 +17,14 @@ export class CreateSearchComponent implements OnInit {
   user: any;
 
   constructor(private router: Router, private fb: FormBuilder, private searchService: SearchService) {
-    this.user = JSON.parse(localStorage.getItem('user'));
+    // this.user = JSON.parse(localStorage.getItem('user'));
   }
 
   ngOnInit() {
     this.form = this.fb.group({
-      user_id: [this.user.id, Validators.compose([Validators.required])],
+      // user_id: [this.user.id, Validators.compose([Validators.required])],
+      code: ['', Validators.compose([Validators.required])],
+      name: ['', Validators.compose([Validators.required])],
       description: ['', Validators.compose([Validators.required])],
       city: ['', Validators.compose([Validators.required])],
       president: ['', Validators.compose([Validators.required])],
